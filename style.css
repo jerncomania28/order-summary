@@ -1,0 +1,116 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html ,body{
+        width: 100%;
+        height: 100%;
+      }
+  
+      body{
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-size: cover;
+        position: relative;
+      }
+      .card{
+        width: 80%;
+        max-width: 300px;
+        /* padding: 1rem; */
+        /* border: 1px solid black; */
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border-radius: 20px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+  
+      }
+      .card img[alt="hero"]{
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+      }
+  
+      .card-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1.5rem;
+        background: white;
+        width: 100%;
+        /* border: 1px solid black; */
+        border-radius: 0px 0px 20px 20px;
+  
+      }
+      .card-body h3{
+        font-size: 17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .card-body p{
+        margin-top: 15px;
+        font-size: 14px;
+        text-align: center;
+      }
+  
+      .card-body .payment-plan{
+        display: flex;
+        width: 100%;
+        margin: 25px 0px;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0.3rem;
+        background: #eee;
+        border-radius: 15px;
+      }
+      .card-body .payment-plan p{
+        margin: 10px 22px;
+      }
+      .card-body button{
+        width: 100%;
+        height: 50px;
+        background: blue;
+        border-radius: 10px;
+        text-align: center;
+        outline: none;
+        border: none;
+        margin: 5px 0px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+  
+      .card-body button a{
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        font-weight: bolder;
+      }
+      .card-body button.pay{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+  
+      .card-body button.cancel{
+        background: transparent;
+      }
+  
+      .card-body button.cancel a{
+        color: gray;
+        font-weight: bolder;
+      }
+  
+  
+  
+      @media screen and (min-width:770px){
+        body{
+          background-image: url(./images/pattern-background-desktop.svg);
+          background-size: cover;
+        }
+      }
+  
+  
+          
